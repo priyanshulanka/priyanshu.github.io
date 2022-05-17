@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/f5175e0265.js" crossorigin="anonymous"></script>
+
+    <script>
+        function func1()
+        {
+            var a=document.getElementById("co").value;
+            if(a=='happy50')
+            {
+                 var mrp=749-(374.5);
+                 document.getElementById("k").innerHTML  = "374.5";
+                 document.getElementById("tc").innerHTML = mrp; 
+            }
+            else  if(a=='happy25')
+            {
+                 var mrp=749-(187.25);
+                 document.getElementById("k").innerHTML  = "187.25";
+                 document.getElementById("tc").innerHTML = mrp; 
+            }
+            
+        }
+    </script>
+    <style>
+        body{
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://media.istockphoto.com/photos/pastel-colored-light-blue-backgrounds-picture-id1334563669?k=20&m=1334563669&s=612x612&w=0&h=uBqhK8ETiWQsYMmObllkbqK4YnFhK_kuINXCjqANj_s=");
+        }
+        .cp{
+            border:1px solid black;
+            border-radius: 8px;
+            width: 450px;
+            height:500px;
+            margin-top: 170px;
+            margin-left: 560px;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.86);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(230, 225, 217);    
+        }
+        .cp1{
+            margin-top: 90px;
+        }
+         .fa-solid {
+             font-size: 100px;
+         }
+         
+
+    </style>
+    <title>Coupon</title>
+</head>
+<body>
+ <div class="cp">
+   
+     <div class="cp1">
+         <h1>Coupon Discount</h1><br>
+        <i class="fa-solid fa-percent"></i><br><br>
+
+     <label for="co">Apply Coupon:</label>
+     <input type="text" id="co">
+     <input type="button" onclick="func1()" value="APPLY" id="ma"><br>
+    Total MRP:<span id="m">1499Rs</span><br>
+ Discount on MRP:-750Rs<br>
+ Coupon Discount:<span id="k">0</span><br>
+ Convenience Fee:FREE<br>
+ <hr>
+ Total Amount:<span id="tc">749Rs</span><br>
+ 
+</div>   
+ </div>   
+</body>
+</html>
